@@ -169,6 +169,8 @@ public class GameController : LocalSingleton<GameController>
         _firstGuess = _secondGuess = false;
         _countCorrectGuesses = 0;
         _activePlayerOrder = PlayerOrder.Player1;
+        _player1.GetCanvasGroup().alpha = 1.0f;
+        _player2.GetCanvasGroup().alpha = 0.5f;
     } 
     public void SetGameGuessesCount(int value) => _gameGuesses = value;
     public int GetCurrentRound() => _currentRound;
